@@ -88,35 +88,33 @@
     </header>
     <div class="outerMargin outerMargin-bgColor">
       <section class="middleMargin-bgColor middleMargin-textColor">
-        <div class="container innerMargin sm:contentBetween contentBetween sm:grid-rows-6">
           <p class="main_title">
             <b>══❚█ Share Server █❚══</b>
           </p>
           <div class="tree">
             <ul>
-              <li><div class="folder_open"></div>　　　　　　  project
+              <li><div class="folder_open"></div>　　project
                 <ul class="ul_phase2">
-                  <li><i class="folder_open-phase2"></i>　　　　　　　　　opened Folder <span>- 15kb</span>
+                  <li><i class="folder_open-phase2"></i>　　　opened Folder <span>- 15kb</span>
                     <ul class="ul_phase3">
-                      <li><i class="folder_open-phase3"></i>　　　　　　　　　　　　css
+                      <li><i class="folder_open-phase3"></i>　 　　   css
                         <ul class="ul_phase4">
-                          <li><i class="file"></i>　　　　　　　　　　　　 files <span>- 3kb</span>
+                          <li><i class="file"></i>　　　　files <span>- 3kb</span>
                           </li>
                         </ul>
                       </li>
-                      <li><i class="folder-phase3"></i>　　　　　　　　　　　　folder close <span>- 10kb</span>
+                      <li><i class="folder-phase3"></i>　 　　   folder close <span>- 10kb</span>
                       </li>
-                      <li><i class="fab fa-html5"></i>　　　　　　　　　　　　index.html</li>
-                      <li><i class="fa fa-picture-o"></i>　　　　　　　　　　　　favicon.ico</li>
+                      <li><i class="file-phase3"></i>　 　　   index.html</li>
+                      <li><i class="file-phase3"></i>　 　　   favicon.ico</li>
                     </ul>
                   </li>
-                  <li><i class="folder-phase2"></i>　　　　　　　　　folder close <span>- 420kb</span>
+                  <li><i class="folder-phase2"></i>　　　folder close <span>- 420kb</span>
                   </li>
                 </ul>
               </li>
             </ul>
           </div>
-        </div>
       </section>
     </div>
     <footer class="automatic_laboratory">
@@ -137,19 +135,21 @@
     height: 30px;
   }
 
-  body {
+body {
   font-size: 1rem;
   background: #f5f5f5;
 }
 
 .tree {
+  display: flex;
+  justify-content: space-around;
   position: relative;
   background: white;
   margin-top: 20px;
   padding: 30px;
-  font-family: 'Roboto Mono', monospace;
+  font-family: sans-serif;
   font-size: 25px;
-  font-weight: 400;
+  font-weight: bold;
   line-height: 1.5;
   color: #212529;
 
@@ -422,6 +422,51 @@
       &:hover {
         text-decoration: none;
       }
+    }
+
+    .file-phase3 {
+      margin-top: 8px;
+      margin-left: 58px;
+      margin-right: 10px;
+      font-size: 20px;
+      box-sizing: border-box;
+      position: absolute;
+      display: block;
+      transform: scale(var(--ggs,1));
+      width: 17px;
+      height: 25px;
+      border: 3.5px solid transparent;
+      border-right: 0;
+      border-top: 0;
+      box-shadow: 0 0 0 2px;
+      border-radius: 1px;
+      border-top-right-radius: 4px;
+      overflow: hidden;
+    }
+
+    .file-phase3::before,.file-phase3::after {
+      content: "";
+      display: block;
+      box-sizing: border-box;
+      position: absolute;
+    }
+
+    .file-phase3::before {
+      background: currentColor;
+      box-shadow: 0 4px 0, -6px -4px 0;
+      left: 0;
+      width: 10px;
+      height: 2px;
+      top: 10px;
+    }
+
+    .file-phase3::after {
+      width: 7px;
+      height: 7px;
+      border-left: 2px solid;
+      border-bottom: 2px solid;
+      right: -1px;
+      top: -1px;
     }
 
     .folder-phase3 {
