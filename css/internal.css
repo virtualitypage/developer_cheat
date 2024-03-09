@@ -834,6 +834,7 @@ table {
   table {
     display: flex;
     justify-content: space-around;
+    font-size: 10px;
     text-align: left;
     border-collapse: separate;
     border-spacing: 2px;
