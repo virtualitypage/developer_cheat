@@ -19,6 +19,24 @@
   color: rgb(243 244 246);
 }
 
+.details-2 {
+  font-size: 15px;
+  text-align: center;
+}
+
+table {
+  display: flex;
+  justify-content: space-around;
+  text-align: left;
+  border-collapse: separate;
+  border-spacing: 2px;
+}
+
+.table-row {
+  background-color: rgb(245, 245, 245);
+  line-height: 170%;
+}
+
 .tree {
   display: flex;
   justify-content: space-around;
@@ -808,6 +826,24 @@
 }
 
 @media (max-width: 768px) { /* PC画面 */
+  .details-2 {
+    font-size: 10px;
+    text-align: center;
+  }
+
+  table {
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+    border-collapse: separate;
+    border-spacing: 2px;
+  }
+
+  .table-row {
+    background-color: rgb(245, 245, 245);
+    line-height: 170%;
+  }
+
   .tree {
     display: flex;
     justify-content: space-around;
